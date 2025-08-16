@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a2634;
+    color: white;
+}
+
+.timeline-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.timeline-header {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #4fd1c5;
+}
+
+.timeline-subtitle {
+    text-align: center;
+    color: #718096;
+    margin-bottom: 50px;
+}
+
+.hourglass {
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+.vertical-timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.vertical-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #4fd1c5;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4fd1c5;
+    border: 4px solid #1a2634;
+    z-index: 1;
+}
+
+.timeline-content {
+    width: 45%;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: auto;
+    padding-left: 40px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-right: auto;
+    padding-right: 40px;
+    text-align: right;
+}
+
+.timeline-date {
+    font-size: 2rem;
+    color: #4fd1c5;
+    margin-bottom: 10px;
+}
+
+.timeline-card {
+    background: #2d3748;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-card h3 {
+    margin: 0 0 10px 0;
+    color: #4fd1c5;
+}
+
+.timeline-period {
+    color: #718096;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+    .vertical-timeline::before {
+        left: 30px;
+    }
+
+    .timeline-dot {
+        left: 30px;
+    }
+
+    .timeline-content {
+        width: calc(100% - 80px);
+        margin-left: 80px !important;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+        text-align: left;
+    }
+
+    
+}
