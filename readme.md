@@ -53,3 +53,7 @@ This will:
 ## Scripts
 
 - `npm start` - Runs the app in development
+
+## Answers to the Assignment
+The test was very interesting, I changed the desing a few times and that made me waste a few times and I wasn't able to test the drag an drop and editing functions, if I had more time I would dedicate it to those features, I would also like to add a zoom in and out feature, but I didn't have time to implement it.
+I looked at timeline imagens for design inspiration, I wanted to make it look like a gantt chart, but I didn't have time to implement the zoom in and out feature.

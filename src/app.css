@@ -103,12 +103,39 @@ body {
 .timeline-card h3 {
     margin: 0 0 10px 0;
     color: #4fd1c5;
+    cursor: pointer;
+}
+
+.timeline-card input {
+    background: transparent;
+    border: 1px solid #4fd1c5;
+    color: white;
+    padding: 5px;
+    font-size: 1rem;
+    width: 90%;
+    margin-bottom: 10px;
 }
 
 .timeline-period {
     color: #718096;
     margin: 0;
     font-size: 0.9rem;
+}
+
+.timeline-drag-handle {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    cursor: ew-resize;
+    z-index: 2;
+}
+
+.timeline-drag-handle.start {
+    left: 0;
+}
+
+.timeline-drag-handle.end {
+    right: 0;
 }
 
 
